@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/form/form.iml" filepath="$PROJECT_DIR$/form/form.iml" />
-      <module fileurl="file://$PROJECT_DIR$/smartTable.iml" filepath="$PROJECT_DIR$/smartTable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/smartTable.iml" filepath="$PROJECT_DIR$/.idea/modules/smartTable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/smartTable.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/smartTable.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/smartTable.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/smartTable.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/smartTable.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/smartTable.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/smartTable.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/smartTable.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/form/smartTable.form.iml" filepath="$PROJECT_DIR$/.idea/modules/form/smartTable.form.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/form/smartTable.form.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/form/smartTable.form.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/form/smartTable.form.main.iml" filepath="$PROJECT_DIR$/.idea/modules/form/smartTable.form.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/form/smartTable.form.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/form/smartTable.form.unitTest.iml" />
     </modules>
   </component>
 </project>

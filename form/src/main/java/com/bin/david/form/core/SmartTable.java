@@ -481,9 +481,9 @@ public class SmartTable<T> extends View implements OnTableChangeListener {
      * @param maxZoom 最大缩放值
      * @param minZoom 最小缩放值
      */
-    public void setZoom(boolean zoom, float maxZoom, float minZoom) {
-
+    public void setZoom(boolean zoom, boolean enableDoubleTap, float maxZoom, float minZoom) {
         matrixHelper.setCanZoom(zoom);
+        matrixHelper.setEnableDoubleTap(enableDoubleTap);
         matrixHelper.setMinZoom(minZoom);
         matrixHelper.setMaxZoom(maxZoom);
         invalidate();

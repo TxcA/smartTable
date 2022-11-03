@@ -40,6 +40,7 @@ public class MatrixHelper extends Observable<TableClickObserver> implements ITou
     private ScaleGestureDetector mScaleGestureDetector;
     private GestureDetector mGestureDetector;
     private boolean isCanZoom = false;
+    private boolean isEnableDoubleTap = true;
     private boolean isScale; //是否正在缩小
     private Rect originalRect; //原始大小
     private Rect zoomRect;
@@ -259,7 +260,7 @@ public class MatrixHelper extends Observable<TableClickObserver> implements ITou
         //双击
         @Override
         public boolean onDoubleTap(MotionEvent e) {
-            if (isCanZoom) {
+            if (isCanZoom && isEnableDoubleTap) {
                 float oldZoom = zoom;
                 if (isScale) { //缩小
                     zoom = zoom / 1.5f;
@@ -500,7 +501,6 @@ public class MatrixHelper extends Observable<TableClickObserver> implements ITou
     }
 
 
-
     /**
      * 是否可以缩放
      * @return 是否可以缩放
@@ -508,8 +508,16 @@ public class MatrixHelper extends Observable<TableClickObserver> implements ITou
     public boolean isCanZoom() {
         zoom = 1f;
         return isCanZoom;
-
     }
+
+    /**
+     * 是否可以触摸缩放
+     * @return 是否可以触摸缩放
+     */
+    public boolean isEnableDoubleTap() {
+        return isEnableDoubleTap;
+    }
+
     /**
      * 获取表格改变监听
      * 主要用于SmartTable view监听matrixHelper 移动和缩放
@@ -526,6 +534,14 @@ public class MatrixHelper extends Observable<TableClickObserver> implements ITou
      */
     public void setOnTableChangeListener(OnTableChangeListener onTableChangeListener) {
         this.listener = onTableChangeListener;
+    }
+
+    /**
+     * 设置是否可以触摸缩放
+     * @param enableDoubleTap
+     */
+    public void setEnableDoubleTap(boolean enableDoubleTap) {
+        isEnableDoubleTap = enableDoubleTap;
     }
 
     /**
